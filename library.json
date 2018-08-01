@@ -1,0 +1,26 @@
+{
+  "name": "dsobczak",
+  "keywords": "utility",
+  "description": "Utility functions and classes",
+  "authors":
+  [
+    {
+      "name": "Darius Sobczak",
+      "email": "mail@dsobczak.de",
+      "url": "http://dsobczak.de/",
+      "maintainer": true
+    }   
+  ],
+  "include": [
+    "examples",
+    "*.cpp",
+    "*.h"
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "sdfsdf"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
