@@ -5,8 +5,8 @@
 
 class Waiting {
 private:
-	unsigned int next;
-	unsigned int time;
+	unsigned long next;
+	unsigned long time;
 public:
 	Waiting(int time) {
 		this->time = time;
@@ -16,6 +16,14 @@ public:
 	Waiting* reset() {
 		this->update();
 		return this;
+	}
+
+	unsigned long getNextTime() {
+		return this->next;
+	}
+
+	unsigned long getTime() {
+		return this->time;
 	}
 
 	bool run() {
@@ -30,6 +38,11 @@ public:
 private: 
 	void update() {
 		this->next = millis() + time;
+
+		/*
+		Serial.print("Waiting ");
+		Serial.println(this->next);
+		*/
 	}
 };
 
